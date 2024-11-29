@@ -1,0 +1,21 @@
+.section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .section h2 {
+    color: #333;
+  }
+  
+  .section h3 {
+    color: #555;
+  }
+  
+  .section p {
+    color: #777;
+    line-height: 1.6;
+  }
+  

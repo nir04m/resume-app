@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar-left h2 {
+    margin: 0;
+  }
+  
+  .navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 24px; /* Larger size for the icons */
+  }
+  
+  .navbar-right a:hover {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  .navbar-right a:first-child:hover {
+    color: #333; /* GitHub default color */
+  }
+  
