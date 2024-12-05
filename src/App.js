@@ -7,13 +7,13 @@ import AboutMe from './components/AboutMe'; // Import the AboutMe component
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <AboutMe /> 
-      <main>
-        
-        
-        
-      </main>
+      <div className="u-container">
+        <Navbar />
+        <AboutMe />
+      </div>
+      <div className="n-container">
+
+      </div>
     </div>
   );
 }
