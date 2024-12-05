@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.css'; 
 import profileImage from '../assets/GradPicture3.jpg'; 
 
+
 function AboutMe() {
   return (
     <div className="about-container">
