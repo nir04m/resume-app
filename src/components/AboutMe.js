@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutMe.css'; 
+import { Card } from 'react-bootstrap';
+import projects from '../data/Projectdata';
 import profileImage from '../assets/GradPicture3.jpg'; 
 
 
@@ -19,21 +21,21 @@ function AboutMe() {
         <h2>Internship Experience</h2>
         <p>Worked as a Software Engineering Intern at XYZ, specializing in web development and database management.</p>
       </div>
-      <div className="projects">
-        <h2>Projects</h2>
-        <div className="project-card">
-          <h3>Project 1</h3>
-          <p>A web application built using React and Node.js to streamline task management.</p>
+      <h2 className="projects-title">My Projects</h2>
+        <div className="projects-container">
+          {projects.map((project, index) => (
+            <Card key={index} className="project-card">
+              <Card.Img variant="top" src={project.imgSrc} />
+              <Card.Body>
+                <Card.Title>{project.title}</Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button className="btn-view">View Project</button>
+                </a>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
-        <div className="project-card">
-          <h3>Project 2</h3>
-          <p>A mobile app developed in Flutter for tracking fitness activities and goals.</p>
-        </div>
-        <div className="project-card">
-          <h3>Project 3</h3>
-          <p>An AI-powered chatbot integrated with an e-commerce platform to assist users.</p>
-        </div>
-      </div>
       <div className="discipline">
         <h2>Discipline</h2>
         <p>Computer Science, focusing on full-stack development, AI, and cloud technologies.</p>
